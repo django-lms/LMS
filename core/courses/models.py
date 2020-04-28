@@ -54,7 +54,7 @@ class Topic(models.Model):
 def get_resource_file_path(instance, filename):
     ext = filename.split('.')[-1]
     filename = "%s.%s" % (uuid.uuid4(), ext)
-    return os.path.join("resource/", filename)
+    return os.path.join("resources/", filename)
 
 
 class Resources(models.Model):
