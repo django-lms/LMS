@@ -11,4 +11,5 @@ class Student(models.Model):
                             verbose_name="Student code")
 
 
-
+    def __str__(self):
+        return '{}'.format(self.code)
