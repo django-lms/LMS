@@ -27,7 +27,7 @@ class Section(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
 
 
 class Topic(models.Model):
@@ -48,7 +48,7 @@ class Topic(models.Model):
     section = models.ForeignKey(Section, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
 
 
 def get_resource_file_path(instance, filename):
@@ -60,6 +60,9 @@ def get_resource_file_path(instance, filename):
 class Resources(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     resource = models.FileField(upload_to=get_resource_file_path, verbose_name="File")
+
+    def __str__(self):
+        return '{}'.format(self.resource)
 
 
 class Package(models.Model):
