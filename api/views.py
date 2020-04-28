@@ -1,8 +1,6 @@
 from rest_framework import generics
-
 from core.courses import models
 from . import serializers
-
 
 class ListCourses(generics.ListCreateAPIView):
     queryset = models.Course.objects.all()

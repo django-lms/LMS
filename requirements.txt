@@ -4,3 +4,5 @@ django-suit==0.2.25
 djangorestframework
 ##Authentificaition
 django-rest-auth
+#Swagger
+drf_yasg
