@@ -1,2 +1,6 @@
 Django==2.2
+wheel
 django-suit==0.2.25
+djangorestframework
+##Authentificaition
+django-rest-auth
