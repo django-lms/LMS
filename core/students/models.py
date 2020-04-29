@@ -12,4 +12,4 @@ class Student(models.Model):
 
 
     def __str__(self):
-        return '{}'.format(self.code)
+        return self.code

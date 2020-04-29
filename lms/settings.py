@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'suit',
+    'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,13 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'drf_yasg',
-
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
     'api',
-
-
     'core.accounts.apps.AccountsConfig',
     'core.teachers.apps.TeachersConfig',
     'core.courses.apps.CoursesConfig',
