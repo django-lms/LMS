@@ -76,4 +76,4 @@ class User(AbstractUser):
         if not self.first_name:
             return "n/d".upper()
 
-        return '%s %s' % (self.first_name.upper(), self.last_name.upper())
+        return '%s, %s' % (self.last_name.upper(), self.first_name.upper())

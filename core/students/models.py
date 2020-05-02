@@ -10,5 +10,6 @@ class Student(models.Model):
     code = models.CharField(max_length=7, default="S" + uuid.uuid4().hex.upper()[0:6], blank=True,
                             verbose_name="Student code")
 
-
+    def __str__(self):
+        return self.user.get_full_name
 
