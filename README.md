@@ -1,2 +1,2 @@
-LMS Learning Management System written
+A Django Learning Management System (LMS)
 ===
