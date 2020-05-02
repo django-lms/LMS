@@ -65,11 +65,8 @@ class User(AbstractUser):
     type = models.SmallIntegerField(choices=USER_TYPE, default=USER_TYPE_ADMIN, verbose_name='type')
 
     objects = UserManager()
-    
-    @property
-    def __str__(self):
-        return '{}, {}'.format(
-            self.last_name, self.first_name)
+
+
 
     @property
     def is_admin(self):
