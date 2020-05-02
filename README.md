@@ -10,10 +10,10 @@ Pasos para la instalacion
   python manage.py makemigrations
   python manage.py migrate
   
- 4)Crear un superusuario
+4)Crear un superusuario
   python manage.py createsuperuser
   
- 5)Correr el proyecto localmente
+5)Correr el proyecto localmente
   python manage.py runserver  
   
 
