@@ -32,18 +32,21 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'suit',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    
     'core.accounts.apps.AccountsConfig',
     'core.teachers.apps.TeachersConfig',
     'core.courses.apps.CoursesConfig',
     'core.students.apps.StudentsConfig',
-
+    
+    'rest_framework',
+    'api.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
