@@ -1,10 +1,10 @@
-#DJANGO LMS 
+# DJANGO LMS 
 
-###Pasos para la instalacion
+### Pasos para la instalacion
 
 1. Tener un entorno virtual con Python3.7
 2. Activar su entorno virtual e instalar los requerimientos:
-  - (pip install -r requirements.txt"
+  - pip install -r requirements.txt
 3. Hacer las migraciones:
   - python manage.py makemigrations
   - python manage.py migrate
