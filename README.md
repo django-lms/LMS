@@ -1,4 +1,5 @@
-LMS Learning Management System 
+DJANGO LMS 
+===
 
 
 Pasos para la instalacion
@@ -13,7 +14,6 @@ Pasos para la instalacion
   python manage.py createsuperuser
   
  5)Correr el proyecto localmente
-  python manage.py runserver 
+  python manage.py runserver  
   
-  
-===
+
