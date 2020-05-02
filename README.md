@@ -1,2 +1,2 @@
-LMS
+LMS Learning Management System written
 ===
