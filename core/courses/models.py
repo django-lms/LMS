@@ -27,7 +27,7 @@ class Section(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.title
 
 
 class Topic(models.Model):
