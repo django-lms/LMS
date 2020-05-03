@@ -1,8 +1,8 @@
-# DJANGO LMS 
+# DJANGO LMS
 _Sistema de gestión de aprendizaje._
 
 ## Pasos para la instalación
-_Estas instrucciones te permitirán obtener una copia del proyecto en 
+_Estas instrucciones te permitirán obtener una copia del proyecto en
 funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 ### Pre-requisitos 📋
@@ -20,13 +20,13 @@ y un entorno virtual con el mismo.
     ```
    ```
    python manage.py migrate
-   ``` 
+   ```
 
 - Crear un superusuario
     ```
-     python manage.py createsuperuser --username admin
+     python manage.py createsuperuser 
     ```
-  
+
 - Correr el proyecto localmente
     ```
     python manage.py runserver
