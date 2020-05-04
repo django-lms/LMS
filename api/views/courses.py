@@ -9,7 +9,8 @@ class SectionAPIView(generics.ListAPIView):
     serializer_class = SectionSerializers
 
 
-class SectionDetailview(generics.RetrieveAPIView):
+class SectionDetailView(generics.RetrieveAPIView):
     queryset=Section.objects.all()
     serializer_class = SectionSerializers
+    lookup_field='id'
 

@@ -9,4 +9,4 @@ class SectionSerializers(serializers.ModelSerializer):
     
     class Meta:
         model = Section
-        fields = ('title','description','order','course')
+        fields = '__all__'
