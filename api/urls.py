@@ -6,7 +6,7 @@ from api.views.students import (
     StudentDetailView,
     StudentCreateView
 )
-from api.views.courses import SectionAPIView
+from api.views.courses import SectionAPIView, SectionDetailView
 
 
 urlpatterns = [
@@ -14,5 +14,6 @@ urlpatterns = [
     path('students/', StudentAPIView.as_view(), name="student_list"),
     path('students/<code>', StudentDetailView.as_view()),
     path('student/create', StudentCreateView.as_view(), name="student_create"),
-    path('sections/', SectionAPIView.as_view()),
+    path('courses/sections/', SectionAPIView.as_view(), name="section_list"),
+    path('courses/sections/<id>/', SectionDetailView.as_view(), name="section_detail"),
 ]
