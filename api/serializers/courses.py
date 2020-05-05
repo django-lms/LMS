@@ -1,12 +1,11 @@
 from rest_framework import serializers
 
-from core.courses.models import Section, Course
-from core.accounts.models import User
+from core.courses.models import Course
 
 
-class SectionSerializers(serializers.ModelSerializer):
-    course = serializers.CharField(source='course.name')
+class CourseSerializer(serializers.ModelSerializer):
     
     class Meta:
-        model = Section
+        model = Course
         fields = '__all__'
+        

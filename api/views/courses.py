@@ -1,16 +1,16 @@
 from rest_framework import generics
 
-from core.courses.models import Section
-from api.serializers.courses import SectionSerializers
+from core.courses.models import Course
+from api.serializers.courses import CourseSerializer
 
 
-class SectionAPIView(generics.ListAPIView):
-    queryset = Section.objects.all()
-    serializer_class = SectionSerializers
+class CourseListAPIView(generics.ListCreateAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
 
 
-class SectionDetailView(generics.RetrieveAPIView):
-    queryset=Section.objects.all()
-    serializer_class = SectionSerializers
-    lookup_field='id'
+class CourseDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+    lookup_field = 'id'
 
