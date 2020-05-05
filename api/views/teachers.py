@@ -10,4 +10,3 @@ class TeacherAPIView(generics.ListCreateAPIView):
 class TeacherDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Teacher.objects.all()
     serializer_class = TeacherSerializer
-    lookup_field = 'code'    
