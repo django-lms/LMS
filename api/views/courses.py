@@ -1,24 +1,14 @@
 from rest_framework import generics
 
-from core.courses.models import Section
-from api.serializers.courses import SectionListSerializer,SectionCreateUpdateSerializer,SectionDetailSerializer
+from api.serializers.courses import CourseSerializer
 
 
-class SectionListView(generics.ListCreateAPIView):
-    queryset = Section.objects.all()
-
-    def get_serializer_class(self, *args, **kwargs):
-        if self.request.method == 'POST':
-            return SectionCreateUpdateSerializer
-        return SectionListSerializer
+class CourseListAPIView(generics.ListCreateAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
 
 
-class SectionDetailView(generics.RetrieveUpdateDestroyAPIView):
-    queryset=Section.objects.all()
-
-    def get_serializer_class(self, *args, **kwargs):
-        if self.request.method == 'PUT':
-            return SectionCreateUpdateSerializer
-        if self.request.method == 'GET':
-            return SectionDetailSerializer    
-        return SectionListSerializer
+class CourseDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
+    lookup_field = 'id'
