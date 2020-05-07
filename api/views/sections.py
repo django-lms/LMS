@@ -1,7 +1,7 @@
 from rest_framework import generics
 
 from core.courses.models import Section
-from api.serializers.courses import (
+from api.serializers.sections import (
     SectionListSerializer,
     SectionCreateUpdateSerializer,
     SectionDetailSerializer,
